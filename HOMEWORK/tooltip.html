@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        .tooltip {
+
+            display: inline-block;
+            border-bottom: 1px double;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: rgb(100, 173, 221);
+
+            text-align: center;
+            border-radius: 10px;
+            padding: 5px;
+            /* position: fixed; */
+            position: absolute;
+            /* position: relative; */
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="tooltip">Hover over me
+        <!-- <div class="tooltiptext">Tooltip text</div> -->
+        <span class="tooltiptext"> tip</span>
+    </div>
+
+</body>
+
+</html>
