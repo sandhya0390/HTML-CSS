@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Mark</title>
+    <style>
+        ul.li::marker {
+            color: blueviolet;
+            font-size: larger;
+            /* list-style-position: outside; */
+            /* list-style: circle ; */
+        }
+
+        ol.li::marker {
+            color: gold;
+            content: '';
+        }
+
+        ul.custom-list li:: marker {
+            color: rgb(194, 36, 62);
+            content: '';
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Unordered item 1</li>
+        <li>Unordered item 2</li>
+    </ul>
+    <ol>
+        <li>Ordered item 1</li>
+        <li>Ordered item 2</li>
+    </ol>
+    <ul class="custom-list">
+        <li> Custom Unordered item 1</li>
+        <li> Custom Unordered item 2</li>
+    </ul>
+</body>
+
+</html>
